@@ -9,9 +9,6 @@ from utils import run_query, get_connection, init_db, load_food_data
 conn = sqlite3.connect("database.db")
 cursor = conn.cursor()
 
-# Now you can run queries
-cursor.execute("SELECT * FROM food_data")
-
 # Set page configuration
 st.set_page_config(
     page_title="Food Wastage Management System",
