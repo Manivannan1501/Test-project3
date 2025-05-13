@@ -6,7 +6,7 @@ from sql_queries import queries
 from utils import run_query, get_connection, init_db, load_food_data
 
 # Establish connection
-conn = sqlite3.connect("your_database.db")
+conn = sqlite3.connect("database.db")
 cursor = conn.cursor()
 
 # Now you can run queries
