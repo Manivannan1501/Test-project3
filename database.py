@@ -3,6 +3,9 @@ import pandas as pd
 import datetime
 import streamlit as st
 
+conn = sqlite3.connect('database.db')  # Ensure this file exists
+cursor = conn.cursor()
+
 def create_database():
     """Create the database and populate it with sample data."""
     try:
